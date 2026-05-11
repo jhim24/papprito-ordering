@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
+<title>Papprito Ordering</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<div class="store-info">
+
+<img
+src="https://via.placeholder.com/100"
+class="logo">
+
+<div>
+
+<h1>PAPPRITO</h1>
+
+<p>Food Ordering System</p>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- CATEGORY -->
+
+<div class="categories">
+
+<button>All</button>
+<button>Burger</button>
+<button>Fries</button>
+<button>Drinks</button>
+
+</div>
+
+<!-- PRODUCTS -->
+
+<div class="products">
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=500">
+
+<div class="content">
+
+<h2>Cheese Burger</h2>
+
+<p>₱99</p>
+
+<button
+onclick="addToCart('Cheese Burger',99)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img
+src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?q=80&w=500">
+
+<div class="content">
+
+<h2>Fries</h2>
+
+<p>₱59</p>
+
+<button
+onclick="addToCart('Fries',59)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FLOATING CART -->
+
+<div class="cart-btn"
+onclick="openCart()">
+
+🛒
+
+<span id="cartCount">
+0
+</span>
+
+</div>
+
+<!-- CART -->
+
+<div class="cart-modal"
+id="cartModal">
+
+<div class="cart-box">
+
+<h2>Your Cart</h2>
+
+<div id="cartItems"></div>
+
+<h3 id="total">
+Total: ₱0
+</h3>
+
+<button class="checkout">
+Checkout
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
